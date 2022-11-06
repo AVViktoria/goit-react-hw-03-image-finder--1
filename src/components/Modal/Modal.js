@@ -39,9 +39,9 @@ class Modal extends Component {
     return createPortal(
       <div className={css.backdrop} onClick={this.handleClickBackdrop}>
         <div className={css.modal}>
-          <button className={css.button} type="button" onClick={onClose}>
+          {/* <button className={css.button} type="button" onClick={onClose}>
             Close
-          </button>
+          </button> */}
           <img
             src={currentImageUrl}
             alt={currentImageDescription}
