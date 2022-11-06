@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { ToastContainer } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import fetchImages from 'services/images-api';
 import { Searchbar } from 'components/SearchBar/SearchBar';
 import ImageGallery from 'components/ImageGallery/ImageGallery';
@@ -28,7 +28,6 @@ class App extends Component {
 
     if (prevState.query !== query) {
       this.setState(({ isLoading }) => ({ isLoading: !isLoading }));
-
       fetchImages(query)
         .then(({ hits, totalHits }) => {
           const imagesArray = hits.map(hit => ({
@@ -138,7 +137,7 @@ class App extends Component {
           />
         )}
 
-        <ToastContainer />
+        <ToastContainer autoClose={3000} />
       </div>
     );
   }
