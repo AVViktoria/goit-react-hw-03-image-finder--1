@@ -6,7 +6,8 @@ import { Searchbar } from 'components/SearchBar/SearchBar';
 import ImageGallery from 'components/ImageGallery/ImageGallery';
 import Button from 'components/Button/Button';
 import Loader from 'components/Loader/Loader';
-import { Modal } from 'components/Modal/Modal';
+import Modal from 'components/Modal/Modal';
+import css from '../App/App.module.css';
 
 class App extends Component {
   state = {
@@ -118,7 +119,7 @@ class App extends Component {
     const toggleModal = this.toggleModal;
 
     return (
-      <>
+      <div className={css.App}>
         <Searchbar onSubmit={getSearchRequest} />
 
         {images && <ImageGallery images={images} openModal={openModal} />}
@@ -138,7 +139,7 @@ class App extends Component {
         )}
 
         <ToastContainer />
-      </>
+      </div>
     );
   }
 }

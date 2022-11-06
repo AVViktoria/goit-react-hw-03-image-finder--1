@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
-// import css from './ImageGallery.module.css';
+import css from '../ImageGallery/ImageGallery.module.css';
 
 function ImageGallery({ images, openModal }) {
   return (
-    <ul className="container">
+    <ul className={css.imageGallery}>
       {images.map(({ id, description, smallImage, largeImage }) => (
         <ImageGalleryItem
           key={id}
