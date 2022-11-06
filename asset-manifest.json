@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/css/main.c623517d.css",
-    "main.js": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/js/main.df0b19a4.js",
+    "main.css": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/css/main.15c9400e.css",
+    "main.js": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/js/main.fa73c774.js",
     "index.html": "/AVViktoria/goit-react-hw-03-image-finder--1.git/index.html",
-    "main.c623517d.css.map": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/css/main.c623517d.css.map",
-    "main.df0b19a4.js.map": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/js/main.df0b19a4.js.map"
+    "main.15c9400e.css.map": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/css/main.15c9400e.css.map",
+    "main.fa73c774.js.map": "/AVViktoria/goit-react-hw-03-image-finder--1.git/static/js/main.fa73c774.js.map"
   },
   "entrypoints": [
-    "static/css/main.c623517d.css",
-    "static/js/main.df0b19a4.js"
+    "static/css/main.15c9400e.css",
+    "static/js/main.fa73c774.js"
   ]
 }
