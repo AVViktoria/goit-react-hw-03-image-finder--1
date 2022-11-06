@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100vw;
@@ -12,8 +13,19 @@
 }
 
 .modal {
+  position: relative;
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
+}
+.button {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 3px;
+  background-color: rgb(246, 190, 117);
+  top: 15px;
+  right: 15px;
+  z-index: 1;
 }
 /* max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);

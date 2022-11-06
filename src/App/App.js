@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import fetchImages from 'services/images-api';
 import { Searchbar } from 'components/SearchBar/SearchBar';
 import ImageGallery from 'components/ImageGallery/ImageGallery';
-import Button from 'components/Button/Button';
+import ButtonLoad from 'components/Button/Button';
 import Loader from 'components/Loader/Loader';
 import Modal from 'components/Modal/Modal';
 import css from '../App/App.module.css';
@@ -127,7 +127,7 @@ class App extends Component {
         {isLoading && <Loader />}
 
         {imagesOnPage >= 12 && imagesOnPage < totalImages && (
-          <Button onNextFetch={onNextFetch} />
+          <ButtonLoad onNextFetch={onNextFetch} />
         )}
 
         {showModal && (
