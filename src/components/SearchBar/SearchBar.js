@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import css from '../SearchBar/SearchBar.module.css';
 
 export class Searchbar extends Component {
@@ -23,7 +24,16 @@ export class Searchbar extends Component {
     const { query } = this.state;
 
     if (query.trim() === '') {
-      toast.error('Enter a search term.');
+      toast.error("Please, enter some picture's name!", {
+        position: 'top-right',
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
+      });
       return;
     }
 
